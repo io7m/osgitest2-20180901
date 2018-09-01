@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.io7m.osgitest2</groupId>
+    <artifactId>com.io7m.osgitest2</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  <artifactId>com.io7m.osgitest2.example0</artifactId>
+
+  <packaging>jar</packaging>
+  <name>com.io7m.osgitest2.example0</name>
+  <description>OSGi Test (Example 0)</description>
+  <url>https://github.com/io7m/osgitest2-20180901</url>
+
+  <dependencies>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- Produce OSGi manifest -->
+      <plugin>
+        <groupId>biz.aQute.bnd</groupId>
+        <artifactId>bnd-maven-plugin</artifactId>
+        <configuration>
+          <bnd><![CDATA[
+            Export-Package: com.io7m.osgitest2.example0
+]]></bnd>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

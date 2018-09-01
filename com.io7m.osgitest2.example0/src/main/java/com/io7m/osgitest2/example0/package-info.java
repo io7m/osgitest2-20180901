@@ -1,0 +1,1 @@
+package com.io7m.osgitest2.example0;
